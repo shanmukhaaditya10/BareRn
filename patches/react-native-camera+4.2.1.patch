@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native-camera/src/RNCamera.js b/node_modules/react-native-camera/src/RNCamera.js
+index b7a271a..58a65e1 100644
+--- a/node_modules/react-native-camera/src/RNCamera.js
++++ b/node_modules/react-native-camera/src/RNCamera.js
+@@ -5,7 +5,7 @@ import {
+   findNodeHandle,
+   Platform,
+   NativeModules,
+-  ViewPropTypes,
++
+   requireNativeComponent,
+   View,
+   ActivityIndicator,
+@@ -15,6 +15,7 @@ import {
+ } from 'react-native';
+ 
+ import type { FaceFeature } from './FaceDetector';
++import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+ 
+ const Rationale = PropTypes.shape({
+   title: PropTypes.string.isRequired,
